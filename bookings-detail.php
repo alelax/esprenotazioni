@@ -23,12 +23,11 @@
 
       if ( $result->num_rows > 0 ) {
          while ( $record = $result->fetch_assoc() ) {
-            echo $record['prenotazione_id']; . "<br>"
-            echo $record['created_at'];
-            echo $record['name'];
-            echo $record['lastname'];
-            echo $record['room_number'];
-
+            echo $record['prenotazione_id'] . "<br>" .
+                 $record['created_at'] . "<br>" .
+                 $record['name'] . ", " .
+                 $record['lastname'];
+            echo "<br><br><br>";     
          }
       }
    }

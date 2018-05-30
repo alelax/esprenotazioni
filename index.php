@@ -49,8 +49,15 @@
                      <div class="reservation_cnt">
                         <div class="db_data spaced-items">
                            <span class="reserv-id"><?php echo $record['id'] ?></span>
+                           <form action="add-guest.php" method="post">
+                              <label for="">Add guest</label>
+                              <input class="add-guest-input" type="text" name="id_inserted" value="" placeholder="Guest Id">
+                              <button class="add-guest-btn" name="subject" type="submit" value="<?php echo $record['id']; ?>">+</button>
+                              <!-- <input class="add-guest-btn" type="submit" value="+"> -->
+
+                           </form>
                            <form action="bookings-detail.php" method="post">
-                              <button class="details-btn" name="subject" type="submit" value="<?php echo $record['id']; ?>">Show details</button>
+                              <button class="details-btn" name="subject" type="submit" value="<?php echo $record['id']; ?>">Details</button>
                            </form>
                         </div>
                         <div class="db_data txt-center">
