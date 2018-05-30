@@ -1,0 +1,65 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+h1 {
+   text-align: center;
+   margin: 20px 0;
+}
+.bookings_cnt {
+   width: 70%;
+   height: 100vh;
+   margin: 0 auto;
+}
+
+.headers_cnt {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+}
+
+.inner_cnt_title {
+   width: 33%;
+   height: 60px;
+   text-align: center;
+   line-height: 60px;
+   background-color: lightgrey;
+}
+
+
+.reservation_cnt {
+   width: 100%;
+   height: 50px;
+   margin: 5px 0;
+   display: flex;
+   justify-content: space-between;
+}
+.db_data {
+   width: 33%;
+   height: 50px;
+   text-align: left;
+   line-height: 50px;
+   font-size: 20px;
+   font-weight: 500;
+   padding: 0 10px;
+}
+
+.spaced-items {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.reserv-id {
+   width: 80px;
+}
+
+.details-btn {
+   height: 30px;
+}
+
+.txt-center {
+   text-align: center;
+}
